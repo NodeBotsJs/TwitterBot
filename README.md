@@ -17,7 +17,8 @@ ACCESS_TOKEN_SECRET=accesstokensecret
 # How does my bot start?
 `index.js`
 
-```const Twit = require('twit');
+```
+const Twit = require('twit');
 const T = new Twit({
   consumer_key: process.env.CONSUMER_KEY,
   consumer_secret: process.env.CONSUMER_SECRET,
@@ -29,7 +30,11 @@ const stream = T.stream('statuses/filter', {track: '#JavaScript'});
 // event handler
 stream.on('tweet', tweet => {
 // perform some action here
-});```
+});
+```
+
+
+
 
 # At the terminal
 #1
